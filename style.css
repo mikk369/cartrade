@@ -289,6 +289,26 @@ input.search-bar {
   grid-template-columns: repeat(6, 1fr);
   gap: 16px;
 }
+.logos-grid .logo {
+  padding: 0;
+  justify-content: center;
+}
+@media only screen and (max-width: 425px) {
+  .logos-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .logos-sub {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .logos-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .search-button {
+    margin-left: 0px;
+  }
+}
 .logos-sub {
   display: flex;
   justify-content: center;
