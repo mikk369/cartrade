@@ -8,3 +8,23 @@ const mobileMenu = (e) => {
 };
 
 menu.addEventListener('click', mobileMenu);
+
+const modal = document.querySelector('.modal');
+const overlay = document.querySelector('.overlay');
+const closeBtn = document.querySelector('.close-modal');
+const loginBtn = document.querySelector('.login-btn');
+
+const openModal = function () {
+  modal.classList.remove('hidden');
+  menulinks.classList.toggle('active');
+  overlay.classList.remove('hidden');
+};
+
+const clodeModal = function () {
+  modal.classList.add('hidden');
+  overlay.classList.add('hidden');
+};
+
+closeBtn.addEventListener('click', clodeModal);
+overlay.addEventListener('click', clodeModal);
+loginBtn.addEventListener('click', openModal);

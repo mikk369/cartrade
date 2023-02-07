@@ -24,10 +24,7 @@
             <a href="#home" class="navbar-links">Home</a>
           </li>
           <li class="navbar-item">
-            <a href="#about" class="navbar-links">About</a>
-          </li>
-          <li class="navbar-item">
-            <a href="#Login" class="navbar-links">Login</a>
+            <a href="#Login" class="navbar-links login-btn">Login</a>
           </li>
           <li class="navbar-btn">
             <a href="#sign-up" class="button" id="signup">Signup</a>
@@ -35,6 +32,17 @@
         </ul>
       </div>
     </div>
+    <!-- MODAL  -->
+    <div class="modal hidden">
+      <button class="close-modal">&times;</button>
+      <h1 class="login-text">Login</h1>
+      <div class="login-inputs">
+        <input type="text" class="email" placeholder="email" />
+        <input type="text" class="password" placeholder="password" />
+        <button class="submit-btn">Submit</button>
+      </div>
+    </div>
+    <div class="overlay hidden"></div>
     <!-- HERO SECTION  -->
     <section class="main-section">
       <div class="section-wrapper">
